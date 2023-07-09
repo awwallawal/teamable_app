@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Page Title -->
+     <title>Teamable App</title>
+
+     <!-- FavIcon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+     <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+
+<!-- User Profile Section -->
+
+ <div id="update-container" >
+
+   <div id="img-container">
+
+   </div>
+
+   <div id="form-container">
+    <div id="profile-form" class="form">
+
+     <h3>Name<span class="span-colon"> : </span><p id="profile-name">Lawal Awwal</p></h3>
+
+     <h3>Email<span class="span-colon"> : </span><p id="profile-email">awwallawal@gmail.com</p></h3> 
+
+     <h3>Interest<span class="span-colon"> : </span><p id="profile-interest">Frontend Web Development</p></h3> 
+
+     <button type="button">Edit Profile</button>
+    </div>
+   </div>
+   
+ </div>
+
+ <!-- Edit Profile Section -->
+
+ <div id="edit-container">
+  <div id="img-container">
+
+  </div>
+
+  <div id="form-container">
+   <form id="form" class="form">
+    <label for="user-name"><small id="label-name">Your Name</small></label>
+    <input type="text" placeholder="User Name" id="user-name" name="user-name" required>
+
+    <label for="user-email"><small id="label-email">Your Email</small></label>
+    <input type="text" placeholder="email@email.com" id="user-email" name="user-email" required>
+
+    <label for="user-interest"><small id="label-interest">Program of Interest</small></label>
+    <input type="text" placeholder="User Interest" id="user-interest" name="user-interest" required>
+
+    <button type="submit">Update Profile</button>
+   </form>
+  </div> 
+ </div>
+
+ <script src="./app.js"></script>
+</body>
+</html>

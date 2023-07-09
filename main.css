@@ -1,0 +1,133 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+};
+
+@font-face {
+ font-family: Roboto;
+ src: url(./font/Roboto-Black.ttf);
+ src: url(./font/Roboto-Bold.ttf);
+ src: url(./font/Roboto-Light.ttf);
+ src: url(./font/Roboto-Medium.ttf);
+ src: url(./font/Roboto-Regular.ttf);
+}
+
+body{
+ font-family: Roboto, sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100vw;
+ height: 100vh;
+ padding: 2px;
+}
+
+/* div{
+ width: 80%;
+ height: 80%;
+} */
+
+#update-container , #edit-container {
+ border: 5px solid grey;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 550px;
+ height: 80%;
+ padding: 2px;
+}
+
+#img-container{
+ /* border: 1px solid green; */
+ background-image: url(./images/user_photo.jpg);
+ background-size: contain;
+ background-position: center;
+ background-repeat: no-repeat;
+ border-radius: 6px;
+ width: 40%;
+ height: 40%;
+}
+
+#profile-form {
+ padding-top: 3%;
+}
+
+#profile-form > h3 {
+ margin-bottom: 5% ;
+}
+
+#profile-form > h3 > p {
+ display: inline-block;
+ font-weight: 400;
+ font-size: medium;
+}
+
+#profile-form > button {
+ margin-top: 2%;
+ /* margin-left: 0; */
+}
+
+#form-container{
+ /* border: 1px solid yellow; */
+ padding: 2%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 80%;
+}
+
+#edit-container{
+ border: 5px solid rgb(157, 82, 82);
+}
+
+.form{
+ /* border: 1px solid blue; */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start;
+ color: rgb(157, 82, 82);
+}
+
+.form > input {
+ margin-bottom: 3%;
+ padding: 3%;
+ width: 100%;
+ font-size: medium;
+ border: 2px solid rgb(157, 82, 82);
+ border-radius: 6px;
+}
+
+::placeholder{
+ color: rgb(157, 82, 82);
+}
+
+.form > button {
+ padding: 3% 7%;
+ width: 80%;
+ margin: auto;
+ border: 2px solid rgb(157, 82, 82);
+ border-radius: 6px;
+ font-weight: 500;
+ font-size: medium;
+ cursor: pointer;
+ background-color: rgb(99, 99, 151);
+ color: rgb(157, 82, 82);
+ text-shadow: 1px 1px 2px #fff;
+}
+
+.form > label {
+ margin-left: 3%;
+ margin-bottom: -2.3%;
+ z-index: 1;
+ background-color: #fff;
+ padding:0 1%;
+ transform: translateY(4%);
+}
+
+#update-container{
+ display: none;
+}
