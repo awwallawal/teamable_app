@@ -29,14 +29,14 @@ body{
 } */
 
 #update-container , #edit-container {
- border: 5px solid grey;
+ border: 5px solid rgb(157, 82, 82);
  border-radius: 10px;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 550px;
- height: 80%;
+ width: 500px;
+ height: 75%;
  padding: 2px;
 }
 
@@ -79,10 +79,6 @@ body{
  flex-direction: column;
  justify-content: center;
  width: 80%;
-}
-
-#edit-container{
- border: 5px solid rgb(157, 82, 82);
 }
 
 .form{
@@ -128,6 +124,10 @@ body{
 
 #update-container{
  display: none;
+}
+
+#edit-container > #img-container {
+ border: none
 }
 
 .img-container {
