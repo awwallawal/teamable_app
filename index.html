@@ -25,19 +25,19 @@
  <div id="update-container" >
 
    <div id="img-container">
-
+      <img src="" id="profile-picture" alt="user profile picture" style="width: 100%;">
    </div>
 
    <div id="form-container">
     <div id="profile-form" class="form">
 
-     <h3>Name<span class="span-colon"> : </span><p id="profile-name">Lawal Awwal</p></h3>
+     <h3>Name<span class="span-colon"> : </span><p id="profile-name">User Name</p></h3>
 
-     <h3>Email<span class="span-colon"> : </span><p id="profile-email">awwallawal@gmail.com</p></h3> 
+     <h3>Email<span class="span-colon"> : </span><p id="profile-email">email@email.com</p></h3> 
 
-     <h3>Interest<span class="span-colon"> : </span><p id="profile-interest">Frontend Web Development</p></h3> 
+     <h3>Interest<span class="span-colon"> : </span><p id="profile-interest">Program of Choice</p></h3> 
 
-     <button type="button">Edit Profile</button>
+     <button type="button" id="edit-btn">Edit Profile</button>
     </div>
    </div>
    
@@ -46,22 +46,31 @@
  <!-- Edit Profile Section -->
 
  <div id="edit-container">
-  <div id="img-container">
+   <div id="img-container" class="img-container">
 
+    <div id="img-img-container">
+      <img  alt="user profile picture" id="image-output" style="width: 150px; height: 150px;">
+    </div>
+
+    <div id="img-ref">
+      <label for="image-upload" id="label-image-upload" >Upload Picture</label>
+      <input type="file" accept="image/*" name="image-upload" id="image-upload">
+    </div>
+    
   </div>
 
   <div id="form-container">
    <form id="form" class="form">
     <label for="user-name"><small id="label-name">Your Name</small></label>
-    <input type="text" placeholder="User Name" id="user-name" name="user-name" required>
+    <input type="text" id="user-name" name="user-name" required>
 
     <label for="user-email"><small id="label-email">Your Email</small></label>
-    <input type="text" placeholder="email@email.com" id="user-email" name="user-email" required>
+    <input type="text" id="user-email" name="user-email" required>
 
     <label for="user-interest"><small id="label-interest">Program of Interest</small></label>
-    <input type="text" placeholder="User Interest" id="user-interest" name="user-interest" required>
+    <input type="text" id="user-interest" name="user-interest" required>
 
-    <button type="submit">Update Profile</button>
+    <button type="submit" id="update-btn">Update Profile</button>
    </form>
   </div> 
  </div>

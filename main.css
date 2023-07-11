@@ -41,14 +41,16 @@ body{
 }
 
 #img-container{
- /* border: 1px solid green; */
- background-image: url(./images/user_photo.jpg);
+ border: 2px solid rgb(157, 82, 82);
+ /* background-image: url(./images/user_photo.jpg);
  background-size: contain;
  background-position: center;
- background-repeat: no-repeat;
+ background-repeat: no-repeat; */
  border-radius: 6px;
  width: 40%;
  height: 40%;
+ display: flex;
+ position: relative;
 }
 
 #profile-form {
@@ -99,9 +101,6 @@ body{
  font-size: medium;
  border: 2px solid rgb(157, 82, 82);
  border-radius: 6px;
-}
-
-::placeholder{
  color: rgb(157, 82, 82);
 }
 
@@ -111,12 +110,11 @@ body{
  margin: auto;
  border: 2px solid rgb(157, 82, 82);
  border-radius: 6px;
- font-weight: 500;
+ font-weight: 600;
  font-size: medium;
  cursor: pointer;
- background-color: rgb(99, 99, 151);
+ background-color: rgb(43, 25, 43);
  color: rgb(157, 82, 82);
- text-shadow: 1px 1px 2px #fff;
 }
 
 .form > label {
@@ -130,4 +128,41 @@ body{
 
 #update-container{
  display: none;
+}
+
+.img-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#img-img-container{
+ height: 90%;
+ border: 2px solid rgb(157, 82, 82);
+ border-radius: 6px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#img-ref{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 80%;
+ text-align: center;
+ border: 1px solid rgb(157, 82, 82);
+ padding: 0.1% 1%;
+ background-color: rgb(43, 25, 43);
+ color: rgb(157, 82, 82);
+ font-weight: 600;
+ font-size: medium;
+ cursor: pointer;
+ border-radius: 6px;
+}
+
+#image-upload{
+ display: none ;
 }
