@@ -44,11 +44,6 @@ editBtn.addEventListener("click", function(){
  updateContainer.style.display = "none";
 });
 
-// updateBtn.addEventListener("click", function(){
-//  editContainer.style.display = "none";
-//  updateContainer.style.display = "flex"
-// });
-
 imageUpload.addEventListener('change', function(e){
  imageOutput.src = URL.createObjectURL(e.target.files[0]);
  profilePicture.src = URL.createObjectURL(e.target.files[0]);
@@ -58,4 +53,7 @@ form.addEventListener('submit', function(e){
  e.preventDefault();
  editContainer.style.display = "none";
  updateContainer.style.display = "flex"
+ profileName.textContent= userName.value;
+ profileEmail.textContent =  userEmail.value;
+ profileInterest.textContent = userInterest.value;
 })
