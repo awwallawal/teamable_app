@@ -29,28 +29,23 @@ body{
 } */
 
 #update-container , #edit-container {
- border: 5px solid rgb(157, 82, 82);
+ /* border: 5px solid rgb(157, 82, 82); */
  border-radius: 10px;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 500px;
+ width: 450px;
  height: 75%;
  padding: 2px;
 }
 
 #img-container{
  border: 2px solid rgb(157, 82, 82);
- /* background-image: url(./images/user_photo.jpg);
- background-size: contain;
- background-position: center;
- background-repeat: no-repeat; */
  border-radius: 6px;
  width: 40%;
  height: 40%;
  display: flex;
- position: relative;
 }
 
 #profile-form {
@@ -69,7 +64,6 @@ body{
 
 #profile-form > button {
  margin-top: 2%;
- /* margin-left: 0; */
 }
 
 #form-container{
@@ -102,7 +96,7 @@ body{
 
 .form > button {
  padding: 3% 7%;
- width: 80%;
+ width: 100%;
  margin: auto;
  border: 2px solid rgb(157, 82, 82);
  border-radius: 6px;
