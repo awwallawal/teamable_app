@@ -54,6 +54,11 @@ form.addEventListener('submit', function(e){
  editContainer.style.display = "none";
  updateContainer.style.display = "flex"
  profileName.textContent= userName.value;
- profileEmail.textContent =  userEmail.value;
+ if(validator.isEmail(userEmail.value)){
+  profileEmail.textContent =  userEmail.value;
+ } else {
+  alert ("Kindly input a valid email address");
+  profileEmail.textContent = "";
+ };
  profileInterest.textContent = userInterest.value;
 })
