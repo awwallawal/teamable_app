@@ -1,3 +1,5 @@
+
+
 let imageUpload = document.getElementById("image-upload");
 let profilePicture = document.getElementById("profile-picture");
 
@@ -28,14 +30,16 @@ let profileEmail = document.getElementById("profile-email");
 
 let profileInterest = document.getElementById("profile-interest");
 
+let userBirth = document.getElementById("userbirth");
+
+
+
 
 
 window.onload = (function(){
  profilePicture.src = dummyPicture
  imageOutput.src = dummyPicture
- userName.value = profileName.textContent;
- userEmail.value = profileEmail.textContent;
- userInterest.value = profileInterest.textContent;
+ let datepicker = new Datepicker('#userbirth');
 })
 
 
@@ -61,4 +65,5 @@ form.addEventListener('submit', function(e){
   profileEmail.textContent = "";
  };
  profileInterest.textContent = userInterest.value;
+ document.getElementById("profile-birthdate").textContent = userBirth.value;
 })

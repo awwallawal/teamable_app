@@ -17,12 +17,11 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./main.css">
 
-   
-
+    <link rel="stylesheet" href="./node_modules/Datepicker.js/dist/css/datepicker.material.css">
 
 </head>
 <body>
-
+  
 <!-- User Profile Section -->
 
  <div id="update-container" >
@@ -38,7 +37,9 @@
 
      <h3>Email<span class="span-colon"> : </span><p id="profile-email">email@email.com</p></h3> 
 
-     <h3>Interest<span class="span-colon"> : </span><p id="profile-interest">Program of Choice</p></h3> 
+     <h3>Interest<span class="span-colon"> : </span><p id="profile-interest">Program of Choice</p></h3>
+
+     <h3>Date of Birth<span class="span-colon"> : </span><p id="profile-birthdate">00/00/0000</p></h3> 
 
      <button type="button" id="edit-btn">Edit Profile</button>
     </div>
@@ -65,13 +66,19 @@
   <div id="form-container">
    <form id="form" class="form">
     <label for="user-name"><small id="label-name">Your Name</small></label>
-    <input type="text" id="user-name" name="user-name" required>
+    <input type="text" id="user-name" name="user-name" placeholder="user name" required>
 
     <label for="user-email"><small id="label-email">Your Email</small></label>
-    <input type="text" id="user-email" name="user-email" required>
+    <input type="text" id="user-email" name="user-email" placeholder="email@email.com" required>
 
     <label for="user-interest"><small id="label-interest">Program of Interest</small></label>
-    <input type="text" id="user-interest" name="user-interest" required>
+    <input type="text" id="user-interest" name="user-interest" placeholder="Program of Interest" required>
+
+    <div id="datepicker-container">
+      <input type="text" id="userbirth" placeholder="Date-of-birth" style="color: rgb(157, 82, 82);">
+    </div>
+
+   
 
     <button type="submit" id="update-btn">Update Profile</button>
    </form>
@@ -80,5 +87,7 @@
 
  <script src="./app.js"></script>
  <script type="text/javascript" src="./node_modules/validator/validator.min.js"></script>
+
+ <script src="./node_modules/Datepicker.js/dist/datepicker.js"></script>
 </body>
 </html>
